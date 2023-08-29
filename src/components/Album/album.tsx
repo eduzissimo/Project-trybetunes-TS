@@ -4,6 +4,7 @@ import getMusics from '../../services/musicsAPI';
 import { AlbumType, SongType } from '../../types';
 import Loading from '../Loading';
 import MusicCard from '../MusicCard/musicCard';
+import Header from '../Header/header';
 import './album.css';
 
 function Album() {
@@ -37,6 +38,7 @@ function Album() {
 
   return (
     <div className="album-container">
+      <Header />
       <img className="album-image" src={ album?.artworkUrl100 } alt="" />
       <p className="artist-name" data-testid="artist-name">
         {album?.artistName}
@@ -46,6 +48,7 @@ function Album() {
       </p>
       {songs.map((song) => (
         <MusicCard
+          trackId={ song.trackId }
           key={ song.trackId }
           trackName={ song.trackName }
           previewUrl={ song.previewUrl }

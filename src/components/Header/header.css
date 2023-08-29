@@ -1,12 +1,12 @@
-.music-card-container {
-  background-color: #66a8ff;
+p {
+  color: white;
+}
+
+.header-component {
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 10px;
-}
-
-audio {
-  width: 100%;
 }

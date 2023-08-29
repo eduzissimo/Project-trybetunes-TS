@@ -1,4 +1,5 @@
 .album-image {
+  align-items: center;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
@@ -6,6 +7,17 @@
 }
 
 .album-name {
-  font-size: 16px;
-  margin-bottom: 20px;
+  color: #93a1a1;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.artist-name {
+  color: #93a1a1;
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
 }
